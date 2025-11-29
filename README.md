@@ -36,6 +36,6 @@ echo -n "/time" | nc localhost 8080
 UDP
 
 ```
-echo -n "/time" |-u nc localhost 8080
+echo -n "/time" | -u nc localhost 8080
 ```
 
