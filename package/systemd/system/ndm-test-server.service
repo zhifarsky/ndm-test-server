@@ -1,0 +1,14 @@
+[Unit]
+Description=ndm-test-server app
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=ndm-test-server --config /etc/ndm-test-server/config.ini
+Restart=always
+RestartSec=1s
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
